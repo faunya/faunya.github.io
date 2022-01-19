@@ -1,3 +1,5 @@
+/*bg img sections*/
+
 .bgimg, .bgimg2 {
     margin: 0;
     min-height: 100%;
@@ -10,15 +12,15 @@
 }
 
 .bgimg {
-    background-image: url("bgimg.png");
+    background-image: url("img/saopic.jpg");
 }
 .bgimg2 {
-    background-image: url("bgimg2.png");
+    background-image: url("img/bgimg.png");
 }
 
 .container {
     margin: 0;
-    height: 500px;
+    height: 400px;
 }
 
 h1 {
