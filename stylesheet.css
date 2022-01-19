@@ -1,4 +1,33 @@
+.bgimg, .bgimg2 {
+    margin: 0;
+    min-height: 100%;
+
+    /*parallax effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg {
+    background-image: url("bgimg.png");
+}
+.bgimg2 {
+    background-image: url("bgimg2.png");
+}
+
+.container {
+    margin: 0;
+    height: 500px;
+}
+
 h1 {
-    color: "red";
-    font: 300;
+    margin: 0;
+    color: red;
+    font-size: 300;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
