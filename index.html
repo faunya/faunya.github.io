@@ -8,10 +8,22 @@
 </head>
 
 <body>
+<div class= "top">
+    <ul id = "navBar" class= "">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="img/bgimg.png">Resume</a></li>
+        <div id="output">scrollTop: 0</div>
+    </ul>
+</div>
+
 
 <div class = "bgimg container">
-    <h1>lol lets go</h1>
-    <p>My first paragraph.</p>
+    <div class="center">
+        <h1>lol lets go</h1>
+        <p>My first paragraph.</p>
+    </div>
 </div>
 
 <div class = "container"> 
@@ -19,8 +31,10 @@
 </div>
 
 <div class = "bgimg container">
-    <h1>lol lets go2</h1>
-    <p>My first paragraph.</p>
+    <div class = "center">
+        <h1>lol lets go2</h1>
+        <p>My first paragraph.</p>
+    </div>
 </div>
 
 <div class = "container"> 
@@ -34,3 +48,28 @@
 
 </body>
 </html> 
+
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("navBar");
+    /*
+    if (document.documentElement.scrollTop < 100) {
+        navbar.className = "bgimg"
+    }
+    else {
+        navbar.className = navbar.className.replace("", "bgimg");
+    }
+    */
+    /*
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        navbar.className = "";
+    } else {
+        navbar.className = navbar.className.replace("", "bgimg");
+        
+    }
+    */
+    output.textContent = document.body.scrollTop + " , " + document.documentElement.scrollTop;
+}
+</script>
