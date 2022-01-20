@@ -50,9 +50,11 @@
 </html> 
 
 <script>
+
 // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
+window.onscroll = function() {navBarChg()};
+
+function navBarChg() {
     var navbar = document.getElementById("navBar");
     /*
     if (document.documentElement.scrollTop < 100) {
@@ -67,9 +69,9 @@ function myFunction() {
         navbar.className = "";
     } else {
         navbar.className = navbar.className.replace("", "bgimg");
-        
     }
     */
+   /*prints scroll values*/
     output.textContent = document.body.scrollTop + " , " + document.documentElement.scrollTop;
 }
 </script>
