@@ -10,19 +10,18 @@
 <body>
 <div class= "top">
     <ul id = "navBar" class= "">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="img/bgimg.png">Resume</a></li>
+        <li><a class = "navItem" href="#home">Home</a></li>
+        <li><a class = "navItem" href="#about">About</a></li>
+        <li><a class = "navItem" href="#projects">Projects</a></li>
+        <li><a class = "navItem" href="img/bgimg.png">Resume</a></li>
         <div id="output">scrollTop: 0</div>
     </ul>
 </div>
 
 
 <div class = "bgimg container">
-    <div class="center">
-        <h1>lol lets go</h1>
-        <p>My first paragraph.</p>
+    <div class = "center">
+        <h1>Jay Hui</h1>
     </div>
 </div>
 
@@ -56,14 +55,14 @@ window.onscroll = function() {navBarChg()};
 
 function navBarChg() {
     var navbar = document.getElementById("navBar");
-    /*
-    if (document.documentElement.scrollTop < 100) {
-        navbar.className = "bgimg"
+    
+    if (document.documentElement.scrollTop < 300) {
+        navbar.className = "navBarTop";
     }
     else {
-        navbar.className = navbar.className.replace("", "bgimg");
+        navbar.className = navbar.className.replace("navBarTop", "navBarScroll");
     }
-    */
+    
     /*
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         navbar.className = "";

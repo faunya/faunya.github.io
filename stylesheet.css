@@ -51,6 +51,16 @@ html, body {
     text-decoration: none;
 }
 
+/*
+*/
+#logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+
 .top {
     z-index: 1;
     margin: 0;
@@ -81,5 +91,3 @@ h1 {
     
     text-align: center;
 }
-
-
