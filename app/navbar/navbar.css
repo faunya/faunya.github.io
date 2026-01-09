@@ -1,9 +1,0 @@
-ul.navbar-links > li {
-    display: inline;
-    margin: 1em;
-    color: lightgrey;
-}
-
-ul.navbar-links > li:hover {
-    color: white;
-}
